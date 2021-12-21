@@ -1,0 +1,11 @@
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/CMakeFiles/edit_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/CMakeFiles/rebuild_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/glad/CMakeFiles/glad.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/glad/CMakeFiles/edit_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/glad/CMakeFiles/rebuild_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/stb/CMakeFiles/stb.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/stb/CMakeFiles/edit_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/stb/CMakeFiles/rebuild_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/CMakeFiles/Skeletal_Animation.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/CMakeFiles/edit_cache.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/CMakeFiles/rebuild_cache.dir
