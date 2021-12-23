@@ -143,6 +143,19 @@ stb/fast:
 .PHONY : stb/fast
 
 #=============================================================================
+# Target rules for targets named imgui
+
+# Build rule for target.
+imgui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui
+.PHONY : imgui
+
+# fast build rule for target.
+imgui/fast:
+	$(MAKE) $(MAKESILENT) -f src/thirdparty/imgui/CMakeFiles/imgui.dir/build.make src/thirdparty/imgui/CMakeFiles/imgui.dir/build
+.PHONY : imgui/fast
+
+#=============================================================================
 # Target rules for targets named Skeletal_Animation
 
 # Build rule for target.
@@ -165,6 +178,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Skeletal_Animation"
 	@echo "... glad"
+	@echo "... imgui"
 	@echo "... stb"
 .PHONY : help
 

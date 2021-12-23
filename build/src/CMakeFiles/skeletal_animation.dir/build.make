@@ -93,10 +93,13 @@ Skeletal_Animation_EXTERNAL_OBJECTS =
 bin/Skeletal_Animation: src/CMakeFiles/Skeletal_Animation.dir/main.cpp.o
 bin/Skeletal_Animation: src/CMakeFiles/Skeletal_Animation.dir/build.make
 bin/Skeletal_Animation: src/thirdparty/glad/libglad.a
-bin/Skeletal_Animation: /usr/local/lib/libglfw.3.3.dylib
 bin/Skeletal_Animation: /usr/local/lib/libassimp.5.1.0.dylib
 bin/Skeletal_Animation: src/thirdparty/stb/libstb.a
+bin/Skeletal_Animation: src/thirdparty/imgui/libimgui.a
+bin/Skeletal_Animation: /usr/local/lib/libGLEW.2.2.0.dylib
 bin/Skeletal_Animation: /Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd
+bin/Skeletal_Animation: src/thirdparty/glad/libglad.a
+bin/Skeletal_Animation: /usr/local/lib/libglfw.3.3.dylib
 bin/Skeletal_Animation: src/CMakeFiles/Skeletal_Animation.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/Skeletal_Animation"
 	cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Skeletal_Animation.dir/link.txt --verbose=$(VERBOSE)

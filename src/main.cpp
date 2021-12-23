@@ -24,6 +24,9 @@
 #include <model_animation.h>
 
 #include <iostream>
+#include <filesystem>
+#include <string>
+#include <unistd.h>
 
 void processInput(GLFWwindow* window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -54,9 +57,32 @@ bool isPlayingSingleBone = false;
 std::vector<std::string> single_animation_items;
 const char* const* cstr_animation_items = nullptr;
 int item_current = 0;
+float x_rotate_degree = 0.0f;
+float y_rotate_degree = 0.0f;
+float z_rotate_degree = 0.0f;
+float x_translate_speed = 0.0f;
+float z_translate_speed = 0.0f;
 
 
 int main(int argc, const char * argv[]) {
+    const char* vertexShaderPath;
+    const char* fragmentShaderPath;
+    const char* modelPath;
+    
+    if (argc != 4)
+    {
+        std::cout << "Please execute with directory assigned" << std::endl;
+        std::cout << "$./build/bin/Skeletal_Animation [vertex shader path] [fragment shader path] [model path]" << std::endl;
+        std::cout << "e.g. $./bin/Skeletal_Animation ../src/anim_shader.vs ../src/anim_shader.fs ../resource/dog.dae" << std::endl;
+        return -1;
+    }
+    else
+    {
+        vertexShaderPath = argv[1];
+        fragmentShaderPath = argv[2];
+        modelPath = argv[3];
+    }
+    
     // glfw: initialize and configure
     glfwInit();
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
@@ -93,22 +119,19 @@ int main(int argc, const char * argv[]) {
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
     // build and compile shaders
-    Shader animShader
-                ("../../../src/anim_model.vs",
-                 "../../../src/anim_model.fs");
+    Shader animShader(vertexShaderPath, fragmentShaderPath);
     
     // load models
-    Model animModel("../../..//resources/dog.dae");
-    Animation animation("../../../resources/dog.dae", &animModel);
+    Model animModel(modelPath);
+    Animation animation(modelPath, &animModel);
     Animator animator(&animation);
         
     // imgui
     initializeImgui(window);
     single_animation_items = animation.GetKeyframeBones();
     cstr_animation_items = convert_vector_to_cstr_array(single_animation_items);
-    std::cout << cstr_animation_items[0] << std::endl;
 
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+//    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
     // render loop
     while (!glfwWindowShouldClose(window))
@@ -122,11 +145,13 @@ int main(int argc, const char * argv[]) {
         }
         else
         {
+            // Normal
             if (single_animation_items[item_current] != "None")
             {
                 isPlayingSingleBone = true;
                 animator.setCurrentPlayedBone(single_animation_items[item_current]);
             }
+            // Single Skeleton
             else
                 isPlayingSingleBone = false;
             
@@ -160,8 +185,15 @@ int main(int argc, const char * argv[]) {
 
         // render the loaded model
         glm::mat4 model = glm::mat4(1.0f);
-        model = glm::translate(model, glm::vec3(0.0f, 0.4f, 0.0f));
-        model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
+        model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
+        
+        model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f));
+        model = glm::rotate(model, glm::radians(x_rotate_degree), glm::vec3(1.0f, 0.0f, 0.0f));
+        model = glm::rotate(model, glm::radians(y_rotate_degree), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::rotate(model, glm::radians(z_rotate_degree), glm::vec3(0.0f, 0.0f, 1.0f));
+        model = glm::translate(model, glm::vec3(x_translate_speed, 0.0f, 0.0f));
+        model = glm::translate(model, glm::vec3(0.0f, 0.0f, z_translate_speed));
         
         animShader.setMat4("model", model);
         animModel.Draw(animShader);
@@ -202,9 +234,12 @@ void windowImguiGeneralSetting()
         isPlayingAnimation = !isPlayingAnimation;
     }
     
+    ImGui::SliderFloat("x-axis rotate (degree)", &x_rotate_degree, 0.0f, 360.0f);
+    ImGui::SliderFloat("y-axis rotate (degree)", &y_rotate_degree, 0.0f, 360.0f);
+    ImGui::SliderFloat("z-axis rotate (degree)", &z_rotate_degree, 0.0f, 360.0f);
+    
     ImGui::Combo("Select Single Bone", &item_current, cstr_animation_items, single_animation_items.size());
     
-//    ImGui::Combo("test", &item_current, t, 3);
     ImGui::End();
 }
 
@@ -242,6 +277,28 @@ void processInput(GLFWwindow* window)
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     {
         camera.ProcessKeyboard(RIGHT, deltaTime);
+    }
+    if (glfwGetKey(window, GLFW_KEY_SPACE))
+    {
+        isPlayingAnimation = !isPlayingAnimation;
+    }
+    
+    if (glfwGetKey(window, GLFW_KEY_RIGHT) && isPlayingAnimation)
+    {
+        x_translate_speed += 0.1f;
+    }
+    else if (glfwGetKey(window, GLFW_KEY_LEFT) && isPlayingAnimation)
+    {
+        x_translate_speed += -0.1f;
+    }
+    
+    if (glfwGetKey(window, GLFW_KEY_UP) && isPlayingAnimation)
+    {
+        z_translate_speed += 0.1f;
+    }
+    else if (glfwGetKey(window, GLFW_KEY_DOWN) && isPlayingAnimation)
+    {
+        z_translate_speed += -0.1f;
     }
 
 }

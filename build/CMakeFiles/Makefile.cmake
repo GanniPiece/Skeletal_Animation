@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../cmake/CompilerOptions.cmake"
   "../src/CMakeLists.txt"
   "../src/thirdparty/glad/CMakeLists.txt"
+  "../src/thirdparty/imgui/CMakeLists.txt"
   "../src/thirdparty/stb/CMakeLists.txt"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/CMakeCXXInformation.cmake"
@@ -28,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/Compiler/Clang.cmake"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/Compiler/GNU.cmake"
+  "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/FindGLEW.cmake"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/FindOpenGL.cmake"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/local/Cellar/cmake/3.22.1/share/cmake/Modules/FindPackageMessage.cmake"
@@ -43,6 +45,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/lib/cmake/assimp-5.1/assimpConfigVersion.cmake"
   "/usr/local/lib/cmake/assimp-5.1/assimpTargets-release.cmake"
   "/usr/local/lib/cmake/assimp-5.1/assimpTargets.cmake"
+  "/usr/local/lib/cmake/glew/CopyImportedTargetProperties.cmake"
+  "/usr/local/lib/cmake/glew/glew-config.cmake"
+  "/usr/local/lib/cmake/glew/glew-targets-release.cmake"
+  "/usr/local/lib/cmake/glew/glew-targets.cmake"
   "/usr/local/lib/cmake/glfw3/glfw3Config.cmake"
   "/usr/local/lib/cmake/glfw3/glfw3ConfigVersion.cmake"
   "/usr/local/lib/cmake/glfw3/glfw3Targets-release.cmake"
@@ -62,6 +68,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/thirdparty/glad/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/thirdparty/stb/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/thirdparty/imgui/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -69,5 +76,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/thirdparty/glad/CMakeFiles/glad.dir/DependInfo.cmake"
   "src/thirdparty/stb/CMakeFiles/stb.dir/DependInfo.cmake"
+  "src/thirdparty/imgui/CMakeFiles/imgui.dir/DependInfo.cmake"
   "src/CMakeFiles/Skeletal_Animation.dir/DependInfo.cmake"
   )

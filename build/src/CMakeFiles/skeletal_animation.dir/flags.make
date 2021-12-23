@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DGLM_FORCE_SILENT_WARNINGS
 
-CXX_INCLUDES = -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/System/Library/Frameworks -I/usr/local/lib -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include -isystem /usr/local/include
+CXX_INCLUDES = -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src -F/Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/System/Library/Frameworks -I/usr/local/lib -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include -I/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui -isystem /usr/local/include
 
-CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=gnu++11
+CXX_FLAGS =  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks  -std=gnu++11
 

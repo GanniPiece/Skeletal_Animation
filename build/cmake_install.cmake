@@ -41,6 +41,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/glad/cmake_install.cmake")
   include("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/stb/cmake_install.cmake")
+  include("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/thirdparty/imgui/cmake_install.cmake")
   include("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build/src/cmake_install.cmake")
 
 endif()
