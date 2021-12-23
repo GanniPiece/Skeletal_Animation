@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/main.cpp \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/glad/glad.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/KHR/khrplatform.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imconfig.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/Utils/Global.hpp \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/Utils/Compilers.hpp \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/Utils/StringFormat/StringFormat.hpp \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/Utils/StringFormat/StringFormat-inl.hpp \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/shader.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animator.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animation.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/bone.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/assimp_glm_helpers.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animdata.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/model_animation.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include/stb_image.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/mesh.h \
+  /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/camera.h

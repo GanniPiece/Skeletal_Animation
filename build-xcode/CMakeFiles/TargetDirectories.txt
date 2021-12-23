@@ -1,0 +1,6 @@
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeFiles/ALL_BUILD.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeFiles/ZERO_CHECK.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/CMakeFiles/glad.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb/CMakeFiles/stb.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui/CMakeFiles/imgui.dir
+/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/CMakeFiles/Skeletal_Animation.dir

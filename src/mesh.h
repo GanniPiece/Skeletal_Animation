@@ -59,7 +59,7 @@ public:
     void Draw(Shader &shader)
     {
         // bind appropriate textures
-        unsigned int diffuseNr = 1;
+        unsigned int diffuseNr  = 1;
         unsigned int specularNr = 1;
         unsigned int normalNr   = 1;
         unsigned int heightNr   = 1;
@@ -131,7 +131,7 @@ private:
 //        glVertexAttribPointer(4, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, Bitangent));
         // ids
         glEnableVertexAttribArray(3);
-        glVertexAttribPointer(3, MAX_BONE_INFLUENCE, GL_INT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, m_BoneIDs));
+        glVertexAttribIPointer(3, MAX_BONE_INFLUENCE, GL_INT, sizeof(Vertex), (void*)offsetof(Vertex, m_BoneIDs));
         // weights
         glEnableVertexAttribArray(4);
         glVertexAttribPointer(4, MAX_BONE_INFLUENCE, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex, m_Weights));

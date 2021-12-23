@@ -13,7 +13,6 @@ uniform mat4 model;
 const int MAX_BONES = 100;
 const int MAX_BONE_INFLUENCE = 4;
 uniform mat4 finalBonesMatrices[MAX_BONES];
-float flag=0.5;
 
 out vec2 TexCoords;
 

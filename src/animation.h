@@ -51,9 +51,9 @@ public:
     Bone* FindBone(const std::string& name)
     {
         auto iter = std::find_if(m_Bones.begin(), m_Bones.end(),
-            [&](const Bone& Bone)
+            [&](const Bone& bone)
             {
-                return Bone.GetBoneName() == name;
+                return bone.GetBoneName() == name;
             }
         );
         if (iter == m_Bones.end()) return nullptr;
@@ -69,6 +69,20 @@ public:
         return m_BoneInfoMap;
     }
 
+    std::vector<std::string> GetKeyframeBones()
+//    void GetKeyframeBones()
+    {
+        std::vector<std::string> keyframe_bones;
+        keyframe_bones.push_back("None");
+
+        for (int i = 0; i < m_Bones.size(); i++)
+        {
+            std::string s = m_Bones[i].GetBoneName();
+            keyframe_bones.push_back(s.c_str());
+        }
+        return keyframe_bones;
+    }
+//    
 private:
     void ReadMissingBones(const aiAnimation* animation, Model& model)
     {
@@ -82,12 +96,14 @@ private:
         {
             auto channel = animation->mChannels[i];
             std::string boneName = channel->mNodeName.data;
-            // std::cout << "m_bones\n" << boneName << std::endl;
-
+//             std::cout << "m_bones\n" << boneName << std::endl;
+            
             if (boneInfoMap.find(boneName) == boneInfoMap.end())
             {
                 boneInfoMap[boneName].id = boneCount;
                 boneCount++;
+                
+                
             }
             
             auto newBone = Bone(channel->mNodeName.data,

@@ -1,0 +1,57 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "95615a589d043540b0319d96928f4178e1cd106a463faae5095c34cc7cec730d"
+    }
+  ],
+  "containerPath" : "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/Skeletal_Animation.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "activeArchitecture" : "x86_64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "macosx",
+      "sdk" : "macosx12.1",
+      "sdkVariant" : "macos",
+      "supportedArchitectures" : [
+        "x86_64h",
+        "x86_64"
+      ],
+      "targetArchitecture" : "x86_64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/popo/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/popo/Library/Developer/Xcode/DerivedData/Skeletal_Animation-aosryrdtxzmalvbhucegfgfdbghb/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/popo/Library/Developer/Xcode/DerivedData/Skeletal_Animation-aosryrdtxzmalvbhucegfgfdbghb/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

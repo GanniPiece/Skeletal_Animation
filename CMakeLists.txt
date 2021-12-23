@@ -13,8 +13,10 @@ find_package(OpenGL 3.3 REQUIRED)
 find_package(glfw3 3.2 REQUIRED)
 find_package(glm REQUIRED)
 find_package(assimp REQUIRED)
+find_package(GLEW REQUIRED)
+
 add_subdirectory("${${PROJECT_NAME}_THIRDPARTY_DIR}/glad")
 add_subdirectory("${${PROJECT_NAME}_THIRDPARTY_DIR}/stb")
-
+add_subdirectory("${${PROJECT_NAME}_THIRDPARTY_DIR}/imgui")
 
 add_subdirectory(${${PROJECT_NAME}_SOURCE_DIR})

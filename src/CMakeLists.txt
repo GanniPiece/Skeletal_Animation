@@ -72,6 +72,8 @@ target_link_libraries(${${PROJECT_NAME}_EXECUTABLE_NAME}
         glfw
         ${ASSIMP_LIBRARIES}
         stb
+		imgui
+		GLEW::GLEW
         $<$<PLATFORM_ID:Linux>:${CMAKE_DL_LIBS}>
 )
 

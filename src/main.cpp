@@ -11,6 +11,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include <imgui/imgui.h>
+#include <imgui/imgui_impl_glfw.h>
+#include <imgui/imgui_impl_opengl3.h>
+#include <Utils/Global.hpp>
+#include <Utils/Compilers.hpp>
+#include <Utils/StringFormat/StringFormat.hpp>
+
 #include <shader.h>
 #include <animator.h>
 #include <camera.h>
@@ -22,6 +29,10 @@ void processInput(GLFWwindow* window);
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
+void initializeImgui(GLFWwindow*);
+void windowImguiGeneralSetting();
+const char* const* convert_vector_to_cstr_array(std::vector<std::string>);
+
 
 // settings
 const unsigned int SCR_WIDTH = 800;
@@ -36,6 +47,14 @@ bool firstMouse = true;
 // timing
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
+
+// animation
+bool isPlayingAnimation = false;
+bool isPlayingSingleBone = false;
+std::vector<std::string> single_animation_items;
+const char* const* cstr_animation_items = nullptr;
+int item_current = 0;
+
 
 int main(int argc, const char * argv[]) {
     // glfw: initialize and configure
@@ -57,11 +76,11 @@ int main(int argc, const char * argv[]) {
     }
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-    glfwSetCursorPosCallback(window, mouse_callback);
+//    glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetScrollCallback(window, scroll_callback);
     
     // tell GLFW to capture our mouse
-    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
     
     // glad: load all OpenGL function pointers
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -74,32 +93,45 @@ int main(int argc, const char * argv[]) {
     // configure global opengl state
     glEnable(GL_DEPTH_TEST);
     // build and compile shaders
-    Shader animShader("../src/anim_model.vs", "../src/anim_model.fs");
+    Shader animShader
+                ("../../../src/anim_model.vs",
+                 "../../../src/anim_model.fs");
     
     // load models
-    Model animModel("../resources/dog.dae");
-    Animation animation("../resources/dog.dae", &animModel);
+    Model animModel("../../..//resources/dog.dae");
+    Animation animation("../../../resources/dog.dae", &animModel);
     Animator animator(&animation);
-    
+        
+    // imgui
+    initializeImgui(window);
+    single_animation_items = animation.GetKeyframeBones();
+    cstr_animation_items = convert_vector_to_cstr_array(single_animation_items);
+    std::cout << cstr_animation_items[0] << std::endl;
 
     glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-    int testid = animModel.GetBoneInfoMap()["Armature_Bone_front_left_leg2"].id;
-
-    /*
-    // DEBUG
-    */
-    int debug_flag = 1;
-    std::ofstream outfile;
-    outfile.open("debug.txt", std::ios::trunc | std::ios::out);
-
 
     // render loop
     while (!glfwWindowShouldClose(window))
     {
         // per-frame time logic
         float currentFrame = glfwGetTime();
-        deltaTime = currentFrame - lastFrame;
-        // deltaTime = 0.05;
+        
+        if (!isPlayingAnimation)
+        {
+            deltaTime = 0.0f;
+        }
+        else
+        {
+            if (single_animation_items[item_current] != "None")
+            {
+                isPlayingSingleBone = true;
+                animator.setCurrentPlayedBone(single_animation_items[item_current]);
+            }
+            else
+                isPlayingSingleBone = false;
+            
+            deltaTime = currentFrame - lastFrame;
+        }
         lastFrame = currentFrame;
         
         
@@ -120,47 +152,72 @@ int main(int argc, const char * argv[]) {
         animShader.setMat4("view", view);
         
         auto transforms = animator.GetFinalBoneMatrices();
-        // std::cout << glm::to_string(transforms[testid]) << std::endl;
-        if (debug_flag < 100)
-        {
-            
-            for (int i = 0; i < 16; i++)
-                outfile << transforms[testid][(int) i/4][i%4] << std::endl;
-            debug_flag++;
-        }   
-        else
-        {
-            outfile.close();
-            // std::cout << "debug write finished" << std::endl;
-        }
 
         for (int i = 0; i < transforms.size(); ++i)
         {
-        //     if (i == testid)
-        //     {
-        //         transforms[i] *= glm::rotate(transforms[i], (float) glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
-        //         std::cout << glm::to_string(transforms[i]) << std::endl;
-        //     }
-        
             animShader.setMat4("finalBonesMatrices[" + std::to_string(i) + "]", transforms[i]);    
-            
         }
-//
+
         // render the loaded model
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, glm::vec3(0.0f, 0.4f, 0.0f));
         model = glm::scale(model, glm::vec3(0.1f, 0.1f, 0.1f));
-    //    model = glm::rotate(model, (float)glfwGetTime(), glm::vec3(0.0f, 1.0f, 0.0f));
         
         animShader.setMat4("model", model);
         animModel.Draw(animShader);
         
+        ImGui_ImplOpenGL3_NewFrame();
+        ImGui_ImplGlfw_NewFrame();
+        ImGui::NewFrame();
+        windowImguiGeneralSetting();
+
+        ImGui::Render();
+        ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
+
         // glfw: swap buffers and poll IO events
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
     glfwTerminate();
     return 0;
+}
+
+const char* const* convert_vector_to_cstr_array(std::vector<std::string> s)
+{
+    int length = s.size();
+    char** p = new char*[length];
+    for (int i = 0; i < length; i++)
+    {
+        p[i] = new char[s[i].size()+1];
+        std::strcpy(p[i], s[i].c_str());
+    }
+    return p;
+}
+
+void windowImguiGeneralSetting()
+{
+    ImGui::Begin("Setting");
+    if(ImGui::Button("Play animation"))
+    {
+        isPlayingAnimation = !isPlayingAnimation;
+    }
+    
+    ImGui::Combo("Select Single Bone", &item_current, cstr_animation_items, single_animation_items.size());
+    
+//    ImGui::Combo("test", &item_current, t, 3);
+    ImGui::End();
+}
+
+
+void initializeImgui(GLFWwindow* window)
+{
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    
+    ImGui::StyleColorsDark();
+    
+    ImGui_ImplGlfw_InitForOpenGL(window, true);
+    ImGui_ImplOpenGL3_Init("#version 330");
 }
 
 void processInput(GLFWwindow* window)

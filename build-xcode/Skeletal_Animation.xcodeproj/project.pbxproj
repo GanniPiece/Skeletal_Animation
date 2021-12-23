@@ -1,0 +1,1461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 537213C73F354995A63C2641 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1958C85548F1DC58B37BB03A /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		AEB0B88CEE2843B5B5E926F1 /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9887B2A86C604758B708C8F9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				1872C82F6093A16FE0E29D4A /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				5EE5368E11C34799B42863FE /* PBXTargetDependency */,
+				BD8A9846B07D41EB87277C86 /* PBXTargetDependency */,
+				B5A4C1AB7E544D9A95F55720 /* PBXTargetDependency */,
+				8B0617DD49DF4D8590BFAB5D /* PBXTargetDependency */,
+				E3427C9EE1614B0CAF2FB2DD /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		010D4F1D9E824A0BAA5EFF9E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/shader.h */ = {isa = PBXBuildFile; fileRef = 3676111665A14F2CAE47C164 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/shader.h */; };
+		024027535C36462B82483BAB /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src/stb_image.cpp */ = {isa = PBXBuildFile; fileRef = C64070F46D794172A63F0BC8 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src/stb_image.cpp */; };
+		02694F7A3A564F74AE1021A6 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_draw.cpp */ = {isa = PBXBuildFile; fileRef = 8E38203E6ED940B18920370C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_draw.cpp */; };
+		07DAC82784EB4A3788B259FB /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/src/glad.c */ = {isa = PBXBuildFile; fileRef = F39B5FA251E7493182212C42 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/src/glad.c */; };
+		0BB9E3B3F1E645E0BD3C6C19 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.cpp */ = {isa = PBXBuildFile; fileRef = D8C867F320C943C7B4ED51F8 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.cpp */; };
+		152D5719DDA6438A8C42BF5C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 2B7D532F129B44A09301DA4B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/CMakeLists.txt */; };
+		2B3E56A00DBF4BEFB2EAEDB9 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_internal.h */ = {isa = PBXBuildFile; fileRef = 26ABA02DD7014B0D9FEE6C86 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_internal.h */; };
+		350CCD73ADAA4F40B65081F5 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animation.h */ = {isa = PBXBuildFile; fileRef = 22B3F58B3578474DBA026C81 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animation.h */; };
+		36D123ECCBAA40D2B978F1EF /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include/stb_image.h */ = {isa = PBXBuildFile; fileRef = D118B30803594F268A768485 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include/stb_image.h */; };
+		3B5D84333F444ECBAE1257EA /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.cpp */ = {isa = PBXBuildFile; fileRef = 1D47354D757340FE84E0DCB4 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.cpp */; };
+		3ED23199DF064D6E8DE43AE1 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_textedit.h */ = {isa = PBXBuildFile; fileRef = 910660DE1C53431BA307C987 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_textedit.h */; };
+		3FF05D0F661B4DEE93B269E7 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_rectpack.h */ = {isa = PBXBuildFile; fileRef = 393FF8ABD9A74DDF92EE047A /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_rectpack.h */; };
+		42FFFAEAB65B41148680B965 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/bone.h */ = {isa = PBXBuildFile; fileRef = 61C5772920FE4D379202C44E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/bone.h */; };
+		474136B22DFA4866B01F1925 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_widgets.cpp */ = {isa = PBXBuildFile; fileRef = FA0CBB7ED25946F399F6EA79 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_widgets.cpp */; };
+		492E5161658242A2A640DA8E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imconfig.h */ = {isa = PBXBuildFile; fileRef = F7EAE2526AAE45E181B047F4 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imconfig.h */; };
+		4BB41BD7823E497A8DA3EDF5 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 4ECFCC6DDAD347C791B13FFC /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/CMakeLists.txt */; };
+		4BD44D4F3BD94DB4BF48433F /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/KHR/khrplatform.h */ = {isa = PBXBuildFile; fileRef = EC04D274A0EB4385996471E3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/KHR/khrplatform.h */; };
+		5C33366B480249D1904930EE /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animdata.h */ = {isa = PBXBuildFile; fileRef = AEDF73C77C30460F8548BB41 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animdata.h */; };
+		5CDD3E8645DC43F787B928EB /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.h */ = {isa = PBXBuildFile; fileRef = 3BCBA44CA42C4825AB81B8AF /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.h */; };
+		5DDC982E4D2340668891AE34 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.cpp */ = {isa = PBXBuildFile; fileRef = B85F0F3129F34A709E087A0F /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.cpp */; };
+		67428C7D6D6B487EBF8923B6 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_truetype.h */ = {isa = PBXBuildFile; fileRef = A85563A6C2204FEDBF9603C9 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_truetype.h */; };
+		6AADD0C09C8045139571D11B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.h */ = {isa = PBXBuildFile; fileRef = 832EF738910B4A0E9B1CC3DA /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.h */; };
+		73E5A6642C5243AABD79FB17 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 361AADB2386F465D9171D779 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/main.cpp */; };
+		7D3BE51320474053A72D93F0 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/mesh.h */ = {isa = PBXBuildFile; fileRef = 012D3D420A0348EAA9A1AB22 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/mesh.h */; };
+		91FE7B4715E648309035A8CA /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/camera.h */ = {isa = PBXBuildFile; fileRef = F504D426021A4960B4DC9B79 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/camera.h */; };
+		952BA70820BB4C51B16D1214 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/assimp_glm_helpers.h */ = {isa = PBXBuildFile; fileRef = 143413B6CA724FE7AF13E851 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/assimp_glm_helpers.h */; };
+		9811E0BBEAD34136954B1684 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_demo.cpp */ = {isa = PBXBuildFile; fileRef = BD565105F2A84A0D893629F3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_demo.cpp */; };
+		A2DAD04A9FC34DABBC1E2CDB /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animator.h */ = {isa = PBXBuildFile; fileRef = 3ECD844F5A714E0B9EB4F97C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animator.h */; };
+		B338ABCF297B4499B6B83FB3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BD8BADB0B14944EBA4E5D70E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/CMakeLists.txt */; };
+		B944553C2E434250B4B5826F /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 26A187B19C17479295BFA77B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/CMakeLists.txt */; };
+		BA464A29FF7E4CA18D7FFD1A /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.h */ = {isa = PBXBuildFile; fileRef = EAA3FD18D1C9402EA3E9F9FD /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.h */; };
+		C92593586ECB4ADCBE9A8616 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/model_animation.h */ = {isa = PBXBuildFile; fileRef = 7D2579210F27441593EA1801 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/model_animation.h */; };
+		CA4429B642D5430D9D01B4A0 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/glad/glad.h */ = {isa = PBXBuildFile; fileRef = 2C2D485D2E66441988D07598 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/glad/glad.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		02B3BF8126D04F609013D831 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		1D4895E57E75456D8E5B184F /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		AF77609D9D084C848B64A816 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		C2831B859B9B4C2783867250 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		08B22454566D496297EF2ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7BC1EAD5164886A8311396;
+			remoteInfo = glad;
+		};
+		1EDDEF7F84224DE5B9251377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6466DCA909EF415D8B98FAA5;
+			remoteInfo = ZERO_CHECK;
+		};
+		3A17E0D4A19449B7ABFC3443 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6466DCA909EF415D8B98FAA5;
+			remoteInfo = ZERO_CHECK;
+		};
+		44C52F47A1824B4182A4A93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7BC1EAD5164886A8311396;
+			remoteInfo = glad;
+		};
+		493C0965A4B54AFDB1C539E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2D1E917E1ED417EB5015815;
+			remoteInfo = Skeletal_Animation;
+		};
+		6E1CDE734D51402FB49BB77A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D37EE4949D48C998B8DAED;
+			remoteInfo = stb;
+		};
+		9CFE751189864C5AA78B2630 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6466DCA909EF415D8B98FAA5;
+			remoteInfo = ZERO_CHECK;
+		};
+		A6E6133375964CCB95677D75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6466DCA909EF415D8B98FAA5;
+			remoteInfo = ZERO_CHECK;
+		};
+		BB67D6E33331439D9E11A3B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2640C236F1C14E79830CC471;
+			remoteInfo = imgui;
+		};
+		D6293BA35E764E279825ECFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B7BC1EAD5164886A8311396;
+			remoteInfo = glad;
+		};
+		D82E1DDF7C4E4ED481D890CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D37EE4949D48C998B8DAED;
+			remoteInfo = stb;
+		};
+		E063041FD6D74AEE982A8B8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6466DCA909EF415D8B98FAA5;
+			remoteInfo = ZERO_CHECK;
+		};
+		EA39496B41E74521A84155B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2BC67BF247F34E9485DAD12A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2640C236F1C14E79830CC471;
+			remoteInfo = imgui;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012D3D420A0348EAA9A1AB22 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/mesh.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mesh.h; path = src/mesh.h; sourceTree = SOURCE_ROOT; };
+		143413B6CA724FE7AF13E851 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/assimp_glm_helpers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = assimp_glm_helpers.h; path = src/assimp_glm_helpers.h; sourceTree = SOURCE_ROOT; };
+		1D47354D757340FE84E0DCB4 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui.cpp; path = src/thirdparty/imgui/imgui/imgui.cpp; sourceTree = SOURCE_ROOT; };
+		1FBE7D7DD67E47879ABA9113 /* imgui */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libimgui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2109CC88A4C142B0A6BCB5CF /* stb */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libstb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B3F58B3578474DBA026C81 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = animation.h; path = src/animation.h; sourceTree = SOURCE_ROOT; };
+		26A187B19C17479295BFA77B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/thirdparty/glad/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		26ABA02DD7014B0D9FEE6C86 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_internal.h; path = src/thirdparty/imgui/imgui/imgui_internal.h; sourceTree = SOURCE_ROOT; };
+		2B7D532F129B44A09301DA4B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/thirdparty/imgui/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2C2D485D2E66441988D07598 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/glad/glad.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = glad.h; path = src/thirdparty/glad/include/glad/glad.h; sourceTree = SOURCE_ROOT; };
+		361AADB2386F465D9171D779 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		3676111665A14F2CAE47C164 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/shader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = shader.h; path = src/shader.h; sourceTree = SOURCE_ROOT; };
+		393FF8ABD9A74DDF92EE047A /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_rectpack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_rectpack.h; path = src/thirdparty/imgui/imgui/imstb_rectpack.h; sourceTree = SOURCE_ROOT; };
+		3BCBA44CA42C4825AB81B8AF /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_glfw.h; path = src/thirdparty/imgui/imgui/imgui_impl_glfw.h; sourceTree = SOURCE_ROOT; };
+		3ECD844F5A714E0B9EB4F97C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = animator.h; path = src/animator.h; sourceTree = SOURCE_ROOT; };
+		4ECFCC6DDAD347C791B13FFC /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/thirdparty/stb/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		61C5772920FE4D379202C44E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/bone.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bone.h; path = src/bone.h; sourceTree = SOURCE_ROOT; };
+		6C4FE48200ED46EAA354A7B1 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7D2579210F27441593EA1801 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/model_animation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = model_animation.h; path = src/model_animation.h; sourceTree = SOURCE_ROOT; };
+		832EF738910B4A0E9B1CC3DA /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui.h; path = src/thirdparty/imgui/imgui/imgui.h; sourceTree = SOURCE_ROOT; };
+		8E38203E6ED940B18920370C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_draw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_draw.cpp; path = src/thirdparty/imgui/imgui/imgui_draw.cpp; sourceTree = SOURCE_ROOT; };
+		910660DE1C53431BA307C987 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_textedit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_textedit.h; path = src/thirdparty/imgui/imgui/imstb_textedit.h; sourceTree = SOURCE_ROOT; };
+		A85563A6C2204FEDBF9603C9 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_truetype.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imstb_truetype.h; path = src/thirdparty/imgui/imgui/imstb_truetype.h; sourceTree = SOURCE_ROOT; };
+		AEDF73C77C30460F8548BB41 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animdata.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = animdata.h; path = src/animdata.h; sourceTree = SOURCE_ROOT; };
+		B2285B5FC0BF443FA29A13FD /* glad */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglad.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B85F0F3129F34A709E087A0F /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_glfw.cpp; path = src/thirdparty/imgui/imgui/imgui_impl_glfw.cpp; sourceTree = SOURCE_ROOT; };
+		BD565105F2A84A0D893629F3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_demo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_demo.cpp; path = src/thirdparty/imgui/imgui/imgui_demo.cpp; sourceTree = SOURCE_ROOT; };
+		BD8BADB0B14944EBA4E5D70E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C64070F46D794172A63F0BC8 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src/stb_image.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stb_image.cpp; path = src/thirdparty/stb/src/stb_image.cpp; sourceTree = SOURCE_ROOT; };
+		D118B30803594F268A768485 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include/stb_image.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stb_image.h; path = src/thirdparty/stb/include/stb_image.h; sourceTree = SOURCE_ROOT; };
+		D8C867F320C943C7B4ED51F8 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_impl_opengl3.cpp; path = src/thirdparty/imgui/imgui/imgui_impl_opengl3.cpp; sourceTree = SOURCE_ROOT; };
+		EAA3FD18D1C9402EA3E9F9FD /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imgui_impl_opengl3.h; path = src/thirdparty/imgui/imgui/imgui_impl_opengl3.h; sourceTree = SOURCE_ROOT; };
+		EC04D274A0EB4385996471E3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/KHR/khrplatform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = khrplatform.h; path = src/thirdparty/glad/include/KHR/khrplatform.h; sourceTree = SOURCE_ROOT; };
+		F39B5FA251E7493182212C42 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/src/glad.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = glad.c; path = src/thirdparty/glad/src/glad.c; sourceTree = SOURCE_ROOT; };
+		F504D426021A4960B4DC9B79 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/camera.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = camera.h; path = src/camera.h; sourceTree = SOURCE_ROOT; };
+		F65B98C02F4245348A099513 /* Skeletal_Animation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Skeletal_Animation; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7EAE2526AAE45E181B047F4 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = imconfig.h; path = src/thirdparty/imgui/imgui/imconfig.h; sourceTree = SOURCE_ROOT; };
+		FA0CBB7ED25946F399F6EA79 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_widgets.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = imgui_widgets.cpp; path = src/thirdparty/imgui/imgui/imgui_widgets.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F22028F722B4018A43C9D0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7DA9E32B964ED092928985 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E908CAC61E6C477B93AACF71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5514C5E3E704222B28B22A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08898D79B0CD4CB69E20EC48 /* stb */ = {
+			isa = PBXGroup;
+			children = (
+				477A086E64194CD083FABF9A /* Header Files */,
+				CBA90E803A73425E85BE3A95 /* Source Files */,
+				4ECFCC6DDAD347C791B13FFC /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/CMakeLists.txt */,
+			);
+			name = stb;
+			sourceTree = "<group>";
+		};
+		0C48D1547E6646688CDEAF63 /* Skeletal_Animation */ = {
+			isa = PBXGroup;
+			children = (
+				F1DD3848F1DC45FCB534306F /* Header Files */,
+				4F252029EDE14180AC5498D7 /* Source Files */,
+				BD8BADB0B14944EBA4E5D70E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/CMakeLists.txt */,
+			);
+			name = Skeletal_Animation;
+			sourceTree = "<group>";
+		};
+		477A086E64194CD083FABF9A /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D118B30803594F268A768485 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include/stb_image.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		4F252029EDE14180AC5498D7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				361AADB2386F465D9171D779 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		73E77D5A7EF544228E959601 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F39B5FA251E7493182212C42 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/src/glad.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		897A302DEDCF4FC6AAB79AA5 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D47354D757340FE84E0DCB4 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.cpp */,
+				BD565105F2A84A0D893629F3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_demo.cpp */,
+				8E38203E6ED940B18920370C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_draw.cpp */,
+				B85F0F3129F34A709E087A0F /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.cpp */,
+				D8C867F320C943C7B4ED51F8 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.cpp */,
+				FA0CBB7ED25946F399F6EA79 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_widgets.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		94363D28902547D89F614840 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				C5DABFA8CFA14DD5B20FB79D /* Header Files */,
+				897A302DEDCF4FC6AAB79AA5 /* Source Files */,
+				2B7D532F129B44A09301DA4B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/CMakeLists.txt */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+		97CDDE2A6B4746F0A37577FD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC04D274A0EB4385996471E3 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/KHR/khrplatform.h */,
+				2C2D485D2E66441988D07598 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include/glad/glad.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		A24E2D5925B34176A8074EC5 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C29209DD9F8E4189B919784C /* CMake Rules */,
+				6C4FE48200ED46EAA354A7B1 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B4C14B2928FE442CAAC75BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99B1F259E4041BF9863DE82 = {
+			isa = PBXGroup;
+			children = (
+				A24E2D5925B34176A8074EC5 /* ALL_BUILD */,
+				F0DD0829FC8C490BAFAC7104 /* glad */,
+				08898D79B0CD4CB69E20EC48 /* stb */,
+				94363D28902547D89F614840 /* imgui */,
+				0C48D1547E6646688CDEAF63 /* Skeletal_Animation */,
+				DECE523E4D0F4782BC5638BB /* Products */,
+				B4C14B2928FE442CAAC75BF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C29209DD9F8E4189B919784C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C5DABFA8CFA14DD5B20FB79D /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7EAE2526AAE45E181B047F4 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imconfig.h */,
+				832EF738910B4A0E9B1CC3DA /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.h */,
+				3BCBA44CA42C4825AB81B8AF /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.h */,
+				EAA3FD18D1C9402EA3E9F9FD /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.h */,
+				26ABA02DD7014B0D9FEE6C86 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_internal.h */,
+				393FF8ABD9A74DDF92EE047A /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_rectpack.h */,
+				910660DE1C53431BA307C987 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_textedit.h */,
+				A85563A6C2204FEDBF9603C9 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imstb_truetype.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CBA90E803A73425E85BE3A95 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C64070F46D794172A63F0BC8 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src/stb_image.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		DECE523E4D0F4782BC5638BB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F65B98C02F4245348A099513 /* Skeletal_Animation */,
+				B2285B5FC0BF443FA29A13FD /* glad */,
+				1FBE7D7DD67E47879ABA9113 /* imgui */,
+				2109CC88A4C142B0A6BCB5CF /* stb */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0DD0829FC8C490BAFAC7104 /* glad */ = {
+			isa = PBXGroup;
+			children = (
+				97CDDE2A6B4746F0A37577FD /* Header Files */,
+				73E77D5A7EF544228E959601 /* Source Files */,
+				26A187B19C17479295BFA77B /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/CMakeLists.txt */,
+			);
+			name = glad;
+			sourceTree = "<group>";
+		};
+		F1DD3848F1DC45FCB534306F /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				22B3F58B3578474DBA026C81 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animation.h */,
+				3ECD844F5A714E0B9EB4F97C /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animator.h */,
+				AEDF73C77C30460F8548BB41 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/animdata.h */,
+				143413B6CA724FE7AF13E851 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/assimp_glm_helpers.h */,
+				61C5772920FE4D379202C44E /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/bone.h */,
+				F504D426021A4960B4DC9B79 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/camera.h */,
+				012D3D420A0348EAA9A1AB22 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/mesh.h */,
+				7D2579210F27441593EA1801 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/model_animation.h */,
+				3676111665A14F2CAE47C164 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/shader.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2640C236F1C14E79830CC471 /* imgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45DAF2CBDD4426F83CCD31B /* Build configuration list for PBXNativeTarget "imgui" */;
+			buildPhases = (
+				46E81C73ADD6498FAA6E69E0 /* Sources */,
+				5F7DA9E32B964ED092928985 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				130DC9364DEE4E16BA916B37 /* PBXTargetDependency */,
+				DE01C2CCF62D45E8A6618CC7 /* PBXTargetDependency */,
+			);
+			name = imgui;
+			productName = imgui;
+			productReference = 1FBE7D7DD67E47879ABA9113 /* imgui */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8B7BC1EAD5164886A8311396 /* glad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73757A3A9A064B8F94B18C64 /* Build configuration list for PBXNativeTarget "glad" */;
+			buildPhases = (
+				E19481846D3548EF80B926E4 /* Sources */,
+				F5514C5E3E704222B28B22A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3330398443841EFA861F4C9 /* PBXTargetDependency */,
+			);
+			name = glad;
+			productName = glad;
+			productReference = B2285B5FC0BF443FA29A13FD /* glad */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B2D1E917E1ED417EB5015815 /* Skeletal_Animation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3841CD6038941ED9F78465F /* Build configuration list for PBXNativeTarget "Skeletal_Animation" */;
+			buildPhases = (
+				1D54A279F435451BBA52BE10 /* Sources */,
+				0F22028F722B4018A43C9D0C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				287A1485054B4863A6689939 /* PBXTargetDependency */,
+				08C73ABE18314B57926991A9 /* PBXTargetDependency */,
+				1E822B2C059742F5AF325278 /* PBXTargetDependency */,
+				68739247D0E14594B1F359F5 /* PBXTargetDependency */,
+			);
+			name = Skeletal_Animation;
+			productName = Skeletal_Animation;
+			productReference = F65B98C02F4245348A099513 /* Skeletal_Animation */;
+			productType = "com.apple.product-type.tool";
+		};
+		E4D37EE4949D48C998B8DAED /* stb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ED0926EE9B64B8D81B8207F /* Build configuration list for PBXNativeTarget "stb" */;
+			buildPhases = (
+				35431FBCCF7A43428B9F6EC3 /* Sources */,
+				E908CAC61E6C477B93AACF71 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00A7C17BD08149ADA866ACD9 /* PBXTargetDependency */,
+			);
+			name = stb;
+			productName = stb;
+			productReference = 2109CC88A4C142B0A6BCB5CF /* stb */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2BC67BF247F34E9485DAD12A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = E41810E143934205BDE0D9B0 /* Build configuration list for PBXProject "Skeletal_Animation" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				AF77609D9D084C848B64A816 /* Debug */,
+				02B3BF8126D04F609013D831 /* Release */,
+				C2831B859B9B4C2783867250 /* MinSizeRel */,
+				1D4895E57E75456D8E5B184F /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B99B1F259E4041BF9863DE82;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				AEB0B88CEE2843B5B5E926F1 /* ALL_BUILD */,
+				B2D1E917E1ED417EB5015815 /* Skeletal_Animation */,
+				6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */,
+				8B7BC1EAD5164886A8311396 /* glad */,
+				2640C236F1C14E79830CC471 /* imgui */,
+				E4D37EE4949D48C998B8DAED /* stb */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1872C82F6093A16FE0E29D4A /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		1958C85548F1DC58B37BB03A /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  make -f /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  make -f /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  make -f /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode
+  make -f /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D54A279F435451BBA52BE10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73E5A6642C5243AABD79FB17 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35431FBCCF7A43428B9F6EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				024027535C36462B82483BAB /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src/stb_image.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E81C73ADD6498FAA6E69E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B5D84333F444ECBAE1257EA /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui.cpp */,
+				9811E0BBEAD34136954B1684 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_demo.cpp */,
+				02694F7A3A564F74AE1021A6 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_draw.cpp */,
+				5DDC982E4D2340668891AE34 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_glfw.cpp */,
+				0BB9E3B3F1E645E0BD3C6C19 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_impl_opengl3.cpp */,
+				474136B22DFA4866B01F1925 /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui/imgui/imgui_widgets.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E19481846D3548EF80B926E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DAC82784EB4A3788B259FB /* /Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/src/glad.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00A7C17BD08149ADA866ACD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */;
+			targetProxy = 3A17E0D4A19449B7ABFC3443 /* PBXContainerItemProxy */;
+		};
+		08C73ABE18314B57926991A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7BC1EAD5164886A8311396 /* glad */;
+			targetProxy = D6293BA35E764E279825ECFC /* PBXContainerItemProxy */;
+		};
+		130DC9364DEE4E16BA916B37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */;
+			targetProxy = 9CFE751189864C5AA78B2630 /* PBXContainerItemProxy */;
+		};
+		1E822B2C059742F5AF325278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D37EE4949D48C998B8DAED /* stb */;
+			targetProxy = 6E1CDE734D51402FB49BB77A /* PBXContainerItemProxy */;
+		};
+		287A1485054B4863A6689939 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */;
+			targetProxy = A6E6133375964CCB95677D75 /* PBXContainerItemProxy */;
+		};
+		5EE5368E11C34799B42863FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */;
+			targetProxy = 1EDDEF7F84224DE5B9251377 /* PBXContainerItemProxy */;
+		};
+		68739247D0E14594B1F359F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2640C236F1C14E79830CC471 /* imgui */;
+			targetProxy = BB67D6E33331439D9E11A3B3 /* PBXContainerItemProxy */;
+		};
+		8B0617DD49DF4D8590BFAB5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2640C236F1C14E79830CC471 /* imgui */;
+			targetProxy = EA39496B41E74521A84155B6 /* PBXContainerItemProxy */;
+		};
+		B5A4C1AB7E544D9A95F55720 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4D37EE4949D48C998B8DAED /* stb */;
+			targetProxy = D82E1DDF7C4E4ED481D890CB /* PBXContainerItemProxy */;
+		};
+		BD8A9846B07D41EB87277C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7BC1EAD5164886A8311396 /* glad */;
+			targetProxy = 44C52F47A1824B4182A4A93C /* PBXContainerItemProxy */;
+		};
+		DE01C2CCF62D45E8A6618CC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B7BC1EAD5164886A8311396 /* glad */;
+			targetProxy = 08B22454566D496297EF2ECB /* PBXContainerItemProxy */;
+		};
+		E3427C9EE1614B0CAF2FB2DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B2D1E917E1ED417EB5015815 /* Skeletal_Animation */;
+			targetProxy = 493C0965A4B54AFDB1C539E4 /* PBXContainerItemProxy */;
+		};
+		F3330398443841EFA861F4C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6466DCA909EF415D8B98FAA5 /* ZERO_CHECK */;
+			targetProxy = E063041FD6D74AEE982A8B8B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CD502A3E5C8413C8732E1C5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		10BE16CB8EFB40909B121815 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		16E74FEC3C264508BC67C54F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		23BEACA7C3FA4335A91BADBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/build";
+			};
+			name = Debug;
+		};
+		312A26C8AC7F44DE9B4BA4A4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("    -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		328ABF2627FF45559ECC9453 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/build";
+			};
+			name = MinSizeRel;
+		};
+		3470A98C8C0A483D841033DD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/bin/RelWithDebInfo";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_SILENT_WARNINGS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src",/usr/local/lib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/RelWithDebInfo/libglad.a",/usr/local/lib/libassimp.5.1.0.dylib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb/RelWithDebInfo/libstb.a","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui/RelWithDebInfo/libimgui.a",/usr/local/lib/libGLEW.2.2.0.dylib,/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/RelWithDebInfo/libglad.a",/usr/local/lib/libglfw.3.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Skeletal_Animation;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		38150EBA862141C9B4AC3AAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		385595E5303A4BF08D184C25 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3B37B40486444542B7804D96 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("       -DNDEBUG ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glad;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4813983474534F01B089FB82 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5CDEEB33FA6A4FB88E9E2E6B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/build";
+			};
+			name = RelWithDebInfo;
+		};
+		60ED3128CD0C48648DCEE268 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6B77A1FCF8874F729D8CE426 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/bin/MinSizeRel";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_SILENT_WARNINGS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src",/usr/local/lib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/MinSizeRel/libglad.a",/usr/local/lib/libassimp.5.1.0.dylib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb/MinSizeRel/libstb.a","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui/MinSizeRel/libimgui.a",/usr/local/lib/libGLEW.2.2.0.dylib,/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/MinSizeRel/libglad.a",/usr/local/lib/libglfw.3.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Skeletal_Animation;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		70EA4359AC694E28A725EEFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/bin/Release";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_SILENT_WARNINGS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src",/usr/local/lib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG     '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/Release/libglad.a",/usr/local/lib/libassimp.5.1.0.dylib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb/Release/libstb.a","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui/Release/libimgui.a",/usr/local/lib/libGLEW.2.2.0.dylib,/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/Release/libglad.a",/usr/local/lib/libglfw.3.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Skeletal_Animation;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8276CADC032D451697B41809 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		880DD4E7E03B4867A409E717 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9B1573637F6541D1BB90D4B1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9B32239694E14D1F8F24C544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/build";
+			};
+			name = Release;
+		};
+		A10D6CCD61984282BC7F86FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A55A83B4A12E465D99619861 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C82C41F75BE74EFA8897B64C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/bin/Debug";
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/Users/popo/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks,/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks,"$(inherited)");
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_SILENT_WARNINGS,"$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src",/usr/local/lib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = (/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -pedantic -W -Wall -Wdouble-promotion -Wextra -Wfloat-equal '-Wformat=2' -Wimplicit-fallthrough -Winit-self -Winline -Wno-long-long -Wpointer-arith -Wshadow -Wsign-promo -Wundef -Wno-attributes '-std=gnu++11' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","-framework OpenGL","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/Debug/libglad.a",/usr/local/lib/libassimp.5.1.0.dylib,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb/Debug/libstb.a","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui/Debug/libimgui.a",/usr/local/lib/libGLEW.2.2.0.dylib,/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/lib/libz.tbd,"/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/glad/Debug/libglad.a",/usr/local/lib/libglfw.3.3.dylib,"-framework OpenGL","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = Skeletal_Animation;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C85C7929E5B84A1E965C542A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		C96F2C28AE774560A74686CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/imgui","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/glad/include","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = imgui;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/imgui";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/include,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CD0D8E2A505B4172A2456B29 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DA0CAD15366944E8BCF29E18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DF502F4491794E56ABE27424 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		ED919FA8373140ABADD557AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/include","/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/src/thirdparty/stb/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = stb;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/popo/Desktop/phd-fall2021/openGL/Hw3/skeletal_animation/build-xcode/src/thirdparty/stb";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ED0926EE9B64B8D81B8207F /* Build configuration list for PBXNativeTarget "stb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED919FA8373140ABADD557AD /* Debug */,
+				DA0CAD15366944E8BCF29E18 /* Release */,
+				0CD502A3E5C8413C8732E1C5 /* MinSizeRel */,
+				385595E5303A4BF08D184C25 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		537213C73F354995A63C2641 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10D6CCD61984282BC7F86FF /* Debug */,
+				60ED3128CD0C48648DCEE268 /* Release */,
+				A55A83B4A12E465D99619861 /* MinSizeRel */,
+				CD0D8E2A505B4172A2456B29 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73757A3A9A064B8F94B18C64 /* Build configuration list for PBXNativeTarget "glad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				38150EBA862141C9B4AC3AAC /* Debug */,
+				10BE16CB8EFB40909B121815 /* Release */,
+				312A26C8AC7F44DE9B4BA4A4 /* MinSizeRel */,
+				3B37B40486444542B7804D96 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9887B2A86C604758B708C8F9 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF502F4491794E56ABE27424 /* Debug */,
+				8276CADC032D451697B41809 /* Release */,
+				9B1573637F6541D1BB90D4B1 /* MinSizeRel */,
+				4813983474534F01B089FB82 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D3841CD6038941ED9F78465F /* Build configuration list for PBXNativeTarget "Skeletal_Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C82C41F75BE74EFA8897B64C /* Debug */,
+				70EA4359AC694E28A725EEFC /* Release */,
+				6B77A1FCF8874F729D8CE426 /* MinSizeRel */,
+				3470A98C8C0A483D841033DD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D45DAF2CBDD4426F83CCD31B /* Build configuration list for PBXNativeTarget "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C96F2C28AE774560A74686CD /* Debug */,
+				C85C7929E5B84A1E965C542A /* Release */,
+				16E74FEC3C264508BC67C54F /* MinSizeRel */,
+				880DD4E7E03B4867A409E717 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E41810E143934205BDE0D9B0 /* Build configuration list for PBXProject "Skeletal_Animation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23BEACA7C3FA4335A91BADBB /* Debug */,
+				9B32239694E14D1F8F24C544 /* Release */,
+				328ABF2627FF45559ECC9453 /* MinSizeRel */,
+				5CDEEB33FA6A4FB88E9E2E6B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2BC67BF247F34E9485DAD12A /* Project object */;
+}

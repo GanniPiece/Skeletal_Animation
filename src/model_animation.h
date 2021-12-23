@@ -35,9 +35,9 @@ class Model
 {
 public:
     // model data
-    std::string directory;
     std::vector<Texture> textures_loaded;    // stores all the texutures loaded so far, optimization to make sure textures aren't loaded more than once.
     std::vector<Mesh>    meshes;
+    std::string directory;
     bool gammaCorrection;
     
     // constructor, expected a path for 3D model
@@ -127,9 +127,8 @@ private:
             if (boneInfoMap.find(boneName) == boneInfoMap.end())
             {
                 BoneInfo newBoneInfo;
-                newBoneInfo.id = m_BoneCounter;
+                newBoneInfo.id = boneCount;
                 newBoneInfo.offset = AssimpGLMHelpers::ConvertMatrixToGLMFormat(mesh->mBones[boneIndex]->mOffsetMatrix);
-//                std::cout << newBoneInfo.offset[0][0] << " " << newBoneInfo.offset[0][1] << " " << newBoneInfo.offset[0][2] << " " << newBoneInfo.offset[0][3] << std::endl;
                 
                 boneInfoMap[boneName] = newBoneInfo;
                 boneID = boneCount;
@@ -173,6 +172,7 @@ private:
                 glm::vec2 vec;
                 vec.x = mesh->mTextureCoords[0][i].x;
                 vec.y = mesh->mTextureCoords[0][i].y;
+                vertex.TexCoords = vec;
             }
             else
                 vertex.TexCoords = glm::vec2(0.0f, 0.0f);
