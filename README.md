@@ -85,6 +85,7 @@ int p1Index = p0Index + 1;
 ```
 
 The `glm::mix()` method provides a easy way of the linear interpolation. We would use this method for the interpolations of the position and the scaling. However, linear interpolation is not suitable for rotation if we want smooth changes in the rotation of animation. Insteads of linear interpolation, the spherical linear interpolation should be used. The glm library also provides a method called `glm::slerp()` for the interpolation of quaternions. The different between linear and spherical interpolations is clearly shown in equation (1) and equation (2).
+
 $$
 Lerp(p_0, p_1; t) = (1-t)p_0 + tp_1
 $$
@@ -99,27 +100,27 @@ $$
 
 Figure 4 shows an example of loading `resources/model_running.dae` model. A cowboy with costume texture is standing at coordination $(0,0,0)$. A simple imgui at the lower left corner provides some options for model
 
-![](Fig/Fig4.jpg)
+   ![](Fig/Fig4.jpg)
 
 1. Pressed “SPACE” or “Play animation” button for start/stop the animation. 
 
-![](Fig/example_play_animation.gif)
+   ![](Fig/example_play_animation.gif)
 
 2. Use “W”, “A”, “S”, “D” keys to move the direction of camera.
 
    ![](Fig/example_camera_move.gif)
 
-   3. Use “Up”, “Down”, “Left”, “Right” keys to move the animator while playing the animation.
+3. Use “Up”, “Down”, “Left”, “Right” keys to move the animator while playing the animation.
 
-      ![](Fig/example_animator_move.gif)
+  ![](Fig/example_animator_move.gif)
 
-   4. Manipulate the sliders in imgui dialog to rotate the animator in different axises.
+4. Manipulate the sliders in imgui dialog to rotate the animator in different axises.
 
-      ![](Fig/example_animator_rotation.gif)
+  ![](Fig/example_animator_rotation.gif)
 
-      5. Specify bone moving in the combo box of imgui dialog when playing animation.
-
-         ![](Fig/example_single_skeleton.gif)
+5. Specify bone moving in the combo box of imgui dialog when playing animation.
+    
+  ![](Fig/example_single_skeleton.gif)
 
 
 
